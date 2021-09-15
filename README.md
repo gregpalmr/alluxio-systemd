@@ -1,5 +1,5 @@
 # alluxio-systemd
-Setup Alluxio daemons to run automatically on boot-up using systemd
+Setup Alluxio daemons to run automatically on boot-up using the systemd service manager.
 
 ## Introduction
 
