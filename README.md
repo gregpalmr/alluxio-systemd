@@ -8,17 +8,18 @@ This git repo contains scripts that setup the Linux systemd configuration to aut
 ## Prerequisites
 
 To use these scripts you must meet the following requirements:
-     - Be running on a Linux server
-     - Have systemd installed and running (see https://systemd.io/)
-     - Have Alluxio install and configured (see https://docs.alluxio.io/os/user/stable/en/deploy/Running-Alluxio-On-a-Cluster.html)
-     - Be logged in as the root user or as a user that has SUDO privilages
-     - Have an "alluxio" user that is a member of the "alluxio" group
-     - Have the JAVA_HOME envrionment variable pointing to the valid Java 1.8 JVM environment
-     - Have the ALLUXIO_HOME environment variable pointing to the main directory where Alluxio was installed
+
+- Be running on a Linux server
+- Have systemd installed and running (see https://systemd.io/)
+- Have Alluxio install and configured (see https://docs.alluxio.io/os/user/stable/en/deploy/Running-Alluxio-On-a-Cluster.html)
+- Be logged in as the root user or as a user that has SUDO privilages
+- Have an "alluxio" user that is a member of the "alluxio" group
+- Have the JAVA_HOME envrionment variable pointing to the valid Java 1.8 JVM environment
+- Have the ALLUXIO_HOME environment variable pointing to the main directory where Alluxio was installed
 
 ## Usage
 
-Step 1. Clone this repo
+### Step 1. Clone this repo
 
 Download this repo's source files  by using the `git clone` command or by downloading the repo zip file.
 
@@ -26,7 +27,7 @@ Download this repo's source files  by using the `git clone` command or by downlo
 
      $ cd alluxio-systemd
 
-Step 2. Install the Alluxio systemd services on the MASTER nodes
+### Step 2. Install the Alluxio systemd services on the MASTER nodes
 
 On all of your Alluxio master nodes, run these scripts:
 
@@ -38,7 +39,7 @@ On all of your Alluxio master nodes, run these scripts:
 
      $ bash setup-alluxio-proxy-systemd.sh
 
-Step 3. Install the Alluxio systemd services on the WORKER nodes
+### Step 3. Install the Alluxio systemd services on the WORKER nodes
 
 On all of your Alluxio worker nodes, run these scripts:
 
@@ -50,7 +51,7 @@ On all of your Alluxio worker nodes, run these scripts:
 
      $ setup-alluxio-proxy-systemd.sh
 
-Step 4. Restart the Alluxio nodes
+### Step 4. Restart the Alluxio nodes
 
 Restart all of your Alluxio master nodes and worker nodes. When completed, log into each node and see if the Alluxio systemd services are running correctly. 
 
