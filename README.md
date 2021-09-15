@@ -9,12 +9,12 @@ This git repo contains scripts that setup the Linux systemd configuration to aut
 
 To use these scripts you must meet the following requirements:
 
-- Be running on a Linux server
+- Be running on a Linux server (these scripts have been tested on CentOS 7.7.1908)
 - Have systemd installed and running (see https://systemd.io/)
-- Have Alluxio install and configured (see https://docs.alluxio.io/os/user/stable/en/deploy/Running-Alluxio-On-a-Cluster.html)
+- Have Alluxio installed and configured (see https://docs.alluxio.io/os/user/stable/en/deploy/Running-Alluxio-On-a-Cluster.html)
 - Be logged in as the root user or as a user that has SUDO privilages
 - Have an "alluxio" user that is a member of the "alluxio" group
-- Have the JAVA_HOME envrionment variable pointing to the valid Java 1.8 JVM environment
+- Have the JAVA_HOME envrionment variable pointing to a valid Java 1.8 JVM environment
 - Have the ALLUXIO_HOME environment variable pointing to the main directory where Alluxio was installed
 
 ## Usage
