@@ -3,7 +3,7 @@ Setup Alluxio daemons to run automatically on boot-up using systemd
 
 ## Introduction
 
-This git repo contains scripts that setup the Linux systemd configuration for automatically starting the Alluxio master node daemons and the worker node daemons.
+This git repo contains scripts that setup the Linux systemd configuration to automatically start the Alluxio master node daemons and the worker node daemons.
 
 ## Prerequisites
 
