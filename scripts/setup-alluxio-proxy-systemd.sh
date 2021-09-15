@@ -4,7 +4,9 @@
 #
 # USAGE:	bash ./setup-alluxio-proxy-systemd.sh
 #
-# NOTES:        Only run this on Alluxio MASTER nodes
+# NOTES:        - Run this on Alluxio MASTER and WORKER nodes
+#               - Make sure ALLUXIO_HOME and JAVA_HOME are defined
+#               - Make sure the alluxio user and alluxio group are define
 #
 
 # Import bash functions
@@ -23,8 +25,6 @@ check_env
 
 #
 # Configure systemd service for the Alluxio proxy daemon
-#     NOTE: Only run this on the Alluxio MASTER nodes
-#           Make sure ALLUXIO_HOME and JAVA_HOME are defined
 #
 echo " Setting up Alluxio proxy systemd service"
 cat <<EOF > /etc/systemd/system/alluxio-proxy.service

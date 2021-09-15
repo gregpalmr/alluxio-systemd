@@ -9,6 +9,7 @@
 #                 in $ALLUXIO_HOME/conf/alluxio-site.properties like this:
 #                       alluxio.worker.tieredstore.level0.alias=MEM
 #                       alluxio.worker.tieredstore.level0.dirs.path=/mnt/ramdisk
+#               - Make sure ALLUXIO_HOME and JAVA_HOME are defined
 #
 
 # Import bash functions
