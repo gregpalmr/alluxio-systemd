@@ -39,6 +39,7 @@ On all of your Alluxio master nodes, run these scripts:
 
      $ bash setup-alluxio-proxy-systemd.sh
 
+
 ### Step 3. Install the Alluxio systemd services on the WORKER nodes
 
 On all of your Alluxio worker nodes, run these scripts:
@@ -51,7 +52,13 @@ On all of your Alluxio worker nodes, run these scripts:
 
      $ setup-alluxio-proxy-systemd.sh
 
-### Step 4. Restart the Alluxio nodes
+### Step 4. Install the Alluxio systemd service on the LOG SERVER node
+
+On the Alluxio log server node (see https://docs.alluxio.io/ee/user/stable/en/operation/Remote-Logging.html), run this script:
+
+     $ bash setup-alluxio-logserver-systemd.sh
+
+### Step 5. Restart the Alluxio nodes
 
 Restart all of your Alluxio master nodes and worker nodes. When completed, log into each node and see if the Alluxio systemd services are running correctly. 
 
@@ -70,6 +77,10 @@ Use these commands on the worker nodes:
      $ systemctl status alluxio-job-worker
 
      $ systemctl status alluxio-proxy
+
+Use this command on the log server node:
+
+     $ systemctl status alluxio-logserver
 
 If you see any errors, you can view the complete systemd errors using the command:
 
